@@ -10,7 +10,7 @@ const config = {
         path: '<path-to-macaroon-store>'
     },
     proxy: {
-        port: 3000,
+        port: 8090,
         hostname: 'localhost'
     }
 };
