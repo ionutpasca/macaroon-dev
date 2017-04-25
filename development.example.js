@@ -9,6 +9,10 @@ const config = {
         url: '127.0.0.1:8081',
         path: '<path-to-macaroon-store>'
     },
+    socket: {
+        url: '127.0.0.1:8082',
+        path: '<path-to-macaroon-socket>'
+    },
     proxy: {
         port: 8090,
         hostname: 'localhost'
