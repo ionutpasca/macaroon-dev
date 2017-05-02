@@ -17,7 +17,6 @@ var router = new httpProxy.RoutingProxy(options);
 
 const api = cp.fork(`${config.api.path}\\server.js`, []);
 const store = cp.fork(`${config.store.path}\\server.js`, []);
-const socket = cp.fork(`${config.socket.path}\\server.js`, []);
 
 const proxy = httpProxy.createServer((req, res) => {
     router.proxyRequest(req, res);
